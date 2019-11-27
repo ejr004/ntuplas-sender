@@ -2,10 +2,6 @@
 
 Script to send ntuplas files to any server
 
-## Getting Started
-
-Server com o SE
-
 ### Installing
 ```
 mkdir /root/scritps
@@ -21,14 +17,14 @@ ntuplas-mail.sh
 ## How to use this:
 
 ### Manipulação e envio de ntuplas
-Os usuários do ambiente Focus enviam ntuplas via lxplus para o storage element da GRID (se.cat.cbpf.br).
+Os usuários do ambiente Focus enviam ntuplas via lxplus para o storage element da GRID (se).
 Esses arquivos ficam espalhados dentro dos diretorios de dados, separados por suas datas:
 ```
 /data/lhcb/<ANO-MES-DIA>/<ntuplasXXXX>
 /data-ext/lhcb/<ANO-MES-DIA>/<ntuplasXXXX>
 /data-ext2/lhcb/<ANO-MES-DIA>/<ntuplasXXXX>
 ```
-Esses arquivos, depois que estão no SE, precisam ser enviados para o servidor focus102, para que possam ser manipulados pelo grupo Focus.
+Esses arquivos, depois que estão no SE, precisam ser enviados para o servidor, para que possam ser manipulados pelo grupo Focus.
 
 Para isso foram criados 3 scripts:
 ```
@@ -44,7 +40,7 @@ Script interativo. Solicita que o usuário entre com a relação de datas e arqu
 ```
 ntuplas-mail.sh
 ```
-Após verificar que os arquivos já foram transmitidos (screen -ls e tail -f /root/scripts/log/XXXX) esse script reunie as saidas do scp, conta a quantidade de arquivos transmitidos e envia por email para os usuários (Melissa e Jussara)
+Após verificar que os arquivos já foram transmitidos (screen -ls e tail -f /root/scripts/log/XXXX) esse script reunie as saidas do scp, conta a quantidade de arquivos transmitidos e envia por email para os usuários (relacionados no script ntuplas-mail)
 
 ## Authors
 
