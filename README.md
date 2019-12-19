@@ -4,9 +4,10 @@ Script to send ntuplas files to any server
 
 ### Installing
 ```
-mkdir /root/scritps
+mkdir -p /root/scritps/log
 cd /root/scritps
-git clone this repo
+git clone this repo .
+yum install screen -y
 ```
 ## Scripts
 ```
